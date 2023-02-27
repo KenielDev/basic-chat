@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat-content,
+.title-box,
+.boxChat,
+.atendente-msg,
+.cliente-msg {
+  border: 1px solid black;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-box {
+  padding: 8px;
+}
+
+.boxChat {
+  margin: 8px 8px 0px 8px;
+  padding: 10px;
+  width: 352px;
+  height: 450px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+}
+
+.boxChat::-webkit-scrollbar {
+  width: 8px;
+}
+.boxChat::-webkit-scrollbar-track {
+  background: transparent;
+}
+.boxChat::-webkit-scrollbar-thumb {
+  background-color: grey; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2px solid white;
+}
+
+.atendente-msg,
+.cliente-msg {
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.atendente-title {
+  text-align: start;
+  margin-bottom: 2px;
+}
+.atendente-msg {
+  max-width: 75%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 0;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+.cliente-title {
+  text-align: end;
+  margin-bottom: 2px;
+}
+
+.cliente-msg {
+  max-width: 75%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-left: auto;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+.sendMsg {
+  margin: 0px 8px 0px 8px;
+  padding: 10px 0px 10px 0px;
+  width: 372px;
+  gap: 7px;
+  display: flex;
+}
+
+input {
+  width: 70%;
+  padding: 8px 6px;
+}
+
+.sendButton {
+  width: 24%;
+  padding: 8px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Atendimento Online</title>
+</head>
+
+<body>
+    <div class="chat-box">
+        <div class="chat-content">
+            <div class="title-box">
+                Atendimento on-line
+            </div>
+            <div class="boxChat" id="contentBox">
+                <div class="atendente" id="customerDiv">
+                    <p class="atendente-title">
+                        Atendente diz:
+                    </p>
+                    <p class="atendente-msg">
+                        Blabla blabla blabla
+                    </p>
+                    <p class="atendente-title">
+                        Atendente diz:
+                    </p>
+                    <p class="atendente-msg">
+                        Blabla blabla blabla
+                    </p>
+                </div>
+                <div class="cliente" id="clientDiv">
+                    <p class="cliente-title">
+                        Você diz:
+                    </p>
+                    <p class="cliente-msg">
+                        Blabla blabla blabla
+                    </p>
+                    <p class="cliente-title">
+                        Você diz:
+                    </p>
+                    <p class="cliente-msg">
+                        Blabla blabla blabla
+                    </p>
+                </div>
+            </div>
+            <form autocomplete="off" class="sendMsg" id="formMsg">
+                <input type="text" id="inputCustomer" placeholder="Atendente..." />
+                <input type="text" id="inputClient" placeholder="Cliente..." />
+                <button class="sendButton" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
