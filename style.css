@@ -5,15 +5,15 @@ body {
   box-sizing: border-box;
 }
 
-.chat-content,
-.title-box,
+.chatContent,
+.titleBox,
 .boxChat,
-.atendente-msg,
-.cliente-msg {
+.atendentMsg,
+.clientMsg {
   border: 1px solid black;
 }
 
-.chat-box {
+.chatBox {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,14 +22,13 @@ body {
   height: 100vh;
 }
 
-.title-box {
+.titleBox {
   padding: 8px;
 }
 
 .boxChat {
   margin: 8px 8px 0px 8px;
   padding: 10px;
-  width: 352px;
   height: 450px;
   word-wrap: break-word;
   overflow-x: hidden;
@@ -49,18 +48,29 @@ body {
   border: 2px solid white;
 }
 
-.atendente-msg,
-.cliente-msg {
+.atendentMsg,
+.clientMsg {
   padding: 6px;
   border-radius: 2px;
 }
 
-.atendente-title {
+.atendentTitle {
   text-align: start;
   margin-bottom: 2px;
 }
-.atendente-msg {
-  max-width: 75%;
+
+input {
+  width: 70%;
+  padding: 8px 6px;
+}
+
+.sendButton {
+  width: 24%;
+  padding: 8px;
+}
+
+.atendentMsg {
+  max-width: 70%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -72,12 +82,12 @@ body {
   word-wrap: break-word;
 }
 
-.cliente-title {
+.clientTitle {
   text-align: end;
   margin-bottom: 2px;
 }
 
-.cliente-msg {
+.clientMsg {
   max-width: 75%;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -97,13 +107,8 @@ body {
   gap: 7px;
   display: flex;
 }
-
-input {
-  width: 70%;
-  padding: 8px 6px;
-}
-
-.sendButton {
-  width: 24%;
-  padding: 8px;
+@media (max-width: 375px) {
+  .chatContent {
+    width: 90%;
+  }
 }
